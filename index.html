@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quieres ser mi San Valentín?</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('images/goldens.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
 
+    <div class="container">
+        <h1>¿Quieres ser mi cita de San Valentín el 21 de Febrero? ❤️</h1>
+        <p>Escoge un restaurante para nuestra cita:</p>
+        <form id="valentineForm">
+            <div class="options">
+                <label>
+                    <input type="radio" name="restaurant" value="Italiano">
+                    <img src="images/italiano.jpg" alt="Comida Italiana"> Italiano
+                </label>
+                <label>
+                    <input type="radio" name="restaurant" value="Coreano">
+                    <img src="images/coreano.jpg" alt="Comida Coreana"> Coreano
+                </label>
+                <label>
+                    <input type="radio" name="restaurant" value="Japones">
+                    <img src="images/japones.jpg" alt="Comida Japonesa"> Japonés
+                </label>
+                <label>
+                    <input type="radio" name="restaurant" value="Español">
+                    <img src="images/español.jpg" alt="Comida Española"> Español
+                </label>
+            </div>
+            <button type="button" onclick="nextPage('activity.html')">Siguiente</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

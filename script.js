@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const audio = document.getElementById('bg-music');
   if (audio) {
-    audio.volume = 0.5; // Adjust volume as needed
+    audio.volume = 0.7; // Adjust volume as needed
     audio.play().catch(err => {
       console.log('Autoplay blocked:', err);
     });

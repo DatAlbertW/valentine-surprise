@@ -1,1 +1,70 @@
+/* Set background and default text color */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url('images/goldens.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white; /* Ensures text is visible */
+}
+
+/* Container with semi-transparent background */
+.container {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Options styling */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.options img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  object-fit: cover;
+}
+
+/* Buttons */
+button {
+  background: #ff0080;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff4da6;
+}
+
+/* Form inputs hidden in final.html */
+#finalForm input[type='hidden'] {
+  display: none;
+}
 

@@ -21,6 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+function playMusic() {
+  const audio = document.getElementById('bg-music');
+  if (audio) {
+    audio.volume = 0.7;
+    audio.play().catch(err => {
+      console.log('Play blocked:', err);
+    });
+  }
+}
+
 // Navigation function
 function nextPage(page) {
   window.location.href = page;

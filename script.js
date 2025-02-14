@@ -49,10 +49,11 @@ function saveActivity() {
 }
 
 // Save Gift choice to localStorage, then go to Fun page
-function saveGiftDirect() {
-  const selected = document.querySelector('input[name="gift"]:checked');
+function saveGift() {
+  const selected = document.querySelector('input[name=\"gift\"]:checked');
   if (selected) {
     localStorage.setItem('selectedGift', selected.value);
+    // Instead of nextPage('fun.html'), go directly to final.html
     nextPage('final.html');
   } else {
     alert('Por favor, elige un regalo antes de continuar.');

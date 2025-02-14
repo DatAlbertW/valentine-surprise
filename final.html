@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Te Amo</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Te Amo Muchísimo ❤️</h1>
+    <p>No importa qué elijas, cualquier día contigo es mi favorito. ¡Feliz San Valentín! 😘</p>
+    <img src="images/nosotros.jpg" alt="Nuestra foto juntos" width="300px"/>
+
+    <!-- Final Form to submit choices to your email via FormSubmit -->
+    <form 
+      action="https://formsubmit.co/albertowicker@gmail.com"
+      method="POST"
+      id="finalForm"
+    >
+      <!-- Hidden inputs to send the stored data -->
+      <input type="hidden" name="Restaurant" id="restaurantInput" />
+      <input type="hidden" name="Activity" id="activityInput" />
+      <input type="hidden" name="Gift" id="giftInput" />
+      
+      <button type="submit">Enviar Respuestas</button>
+    </form>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
 

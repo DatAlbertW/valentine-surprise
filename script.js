@@ -48,14 +48,14 @@ function saveActivity() {
   }
 }
 
-// Save Gift choice to localStorage, then go to Fun page
+// Save Gift choice to localStorage, then go to goldenconrosa.html
 function saveGift() {
   const selected = document.querySelector('input[name=\"gift\"]:checked');
   if (selected) {
     localStorage.setItem('selectedGift', selected.value);
-    // Instead of nextPage('fun.html'), go directly to final.html
-    nextPage('final.html');
+    nextPage('goldenconrosa.html'); // Go to the special page
   } else {
     alert('Por favor, elige un regalo antes de continuar.');
   }
 }
+
